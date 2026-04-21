@@ -92,5 +92,5 @@ A complete Android application that connects blood donors with recipients, enabl
 
 1. **Clone the repository**
    ```bash
-   git clone <repository-url>
+   git clone https://github.com/RashmiRShetty/lifelink
    cd Lifelink
