@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_recipient_profile"
+        android:title="Profile" />
+
+    <item
+        android:id="@+id/nav_blood_request"
+        android:title="Request" />
+
+    <item
+        android:id="@+id/nav_history"
+        android:title="History" />
+
+</menu>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFFFCDD2</color>
+    <color name="purple_500">#FFF44336</color>
+    <color name="purple_700">#FFD32F2F</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ublood_white">#FFFFFFFF</color>
+    <color name="ublood_red">#FF0000</color>
+    <color name="light_green">#27AE60</color>
+
+
+    <!-- Custom colors for LifeLink app -->
+    <color name="primary_color">#E74C3C</color>
+    <color name="primary_dark">#C0392B</color>
+    <color name="accent_color">#E53935</color>
+    <color name="secondary_color">#F39C12</color>
+    <color name="success_color">#27AE60</color>
+    <color name="warning_color">#F1C40F</color>
+    <color name="error_color">#E74C3C</color>
+    <color name="text_primary">#2C3E50</color>
+    <color name="text_secondary">#7F8C8D</color>
+    <color name="background_light">#ECF0F1</color>
+    <color name="divider">#BDC3C7</color>
+    <color name="button_primary">#3498DB</color>
+    <color name="red">#F01C0C</color>
+</resources>

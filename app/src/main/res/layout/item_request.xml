@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white"
+    android:elevation="2dp"
+    android:layout_margin="8dp">
+
+    <!-- Patient Name -->
+    <TextView
+        android:id="@+id/patientName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Patient: abc"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:paddingBottom="4dp"/>
+
+    <!-- Blood Group and Units -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="2dp">
+
+        <TextView
+            android:id="@+id/bloodGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Blood Group: O-"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/units"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Units: 6"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Location -->
+    <TextView
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location: xyz"
+        android:textSize="14sp"/>
+
+    <!-- Contact -->
+    <TextView
+        android:id="@+id/contact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact: 1234567890"
+        android:textSize="14sp"/>
+
+    <!-- Date and Status -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: 2025-09-14"
+            android:textSize="14sp"/>
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="Status: OPEN"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <!-- Accept Button -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/acceptCard"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="8dp"
+        app:cardBackgroundColor="@color/primary_color"
+        android:foreground="?attr/selectableItemBackground">
+
+        <Button
+            android:id="@+id/acceptButton"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Accept"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="@android:color/white"
+            android:background="@android:color/transparent"
+            android:gravity="center" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- Donor details (hidden initially) -->
+    <TextView
+        android:id="@+id/donorDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Donor: name\nContact: 0000000000\nBlood Group: O-"
+        android:textColor="#4CAF50"
+        android:textSize="14sp"
+        android:visibility="gone"
+        android:paddingTop="8dp"/>
+</LinearLayout>

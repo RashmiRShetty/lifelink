@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#ffffff">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/lifelink"
+        android:layout_gravity="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the OTP sent to your email"
+        android:textSize="18sp"
+        android:textColor="#333"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center" />
+
+    <EditText
+        android:id="@+id/otpInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="6-digit OTP"
+        android:layout_marginTop="30dp"
+        android:inputType="number"
+        android:gravity="center"
+        android:background="@drawable/input_background"
+        android:padding="14dp" />
+
+    <Button
+        android:id="@+id/verifyBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verify OTP"
+        android:layout_marginTop="24dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:backgroundTint="#e53935"
+        android:padding="14dp" />
+
+    <TextView
+        android:id="@+id/resendLink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend OTP"
+        android:textColor="#e53935"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp" />
+</LinearLayout>

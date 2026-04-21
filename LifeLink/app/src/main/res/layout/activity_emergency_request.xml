@@ -1,0 +1,98 @@
+<!-- res/layout/activity_emergency_request.xml -->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8E1"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency Blood Request"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:textColor="#D32F2F"
+            android:layout_marginBottom="20dp"
+            android:gravity="center" />
+
+        <!-- Emergency toggle -->
+        <CheckBox
+            android:id="@+id/cbEmergency"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mark as Emergency"
+            android:textColor="#D32F2F"
+            android:textSize="18sp"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- Critical Condition -->
+        <EditText
+            android:id="@+id/etCriticalCondition"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:hint="Patient Critical Condition Details (optional)"
+            android:inputType="textMultiLine"
+            android:minLines="4"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Urgency Level -->
+        <Spinner
+            android:id="@+id/spinnerUrgency"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_background"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Timeframe -->
+        <EditText
+            android:id="@+id/etTimeframe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Required Within (hours)"
+            android:inputType="number"
+            android:background="@drawable/edittext_background"
+            android:padding="12dp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Real-time Donor Availability (just a button here for demo) -->
+        <Button
+            android:id="@+id/btnCheckDonors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Check Nearby Available Donors"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Donor confirmation message -->
+        <TextView
+            android:id="@+id/tvDonorStatus"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#388E3C"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginBottom="20dp"/>
+
+        <Button
+            android:id="@+id/btnSubmitEmergencyRequest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit Emergency Request"
+            android:backgroundTint="#D32F2F"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>
